@@ -38,7 +38,6 @@ function addManager() {
         },
 
         {
-            type: "number",
             message: "Please provide the team manager's office number:",
             name: "officeNumber"
         },
@@ -49,6 +48,7 @@ function addManager() {
             const id = 1
             const email = data.email
             const officeNumber = data.officeNumber
+            console.log(officeNumber);
             const teamMember = new Manager(name, id, email, officeNumber)
                     
             completedTeam.push(teamMember)
@@ -178,6 +178,7 @@ function compileTeam() {
                 <p>Employee ID: ${completedTeam[i].id}</p>
                 <p>Email: <a href="mailto:${completedTeam[i].email}">${completedTeam[i].email}</a>></p>
         `
+        console.log(completedTeam[i].officeNumber);
         if (completedTeam[i].officeNumber) {
             object += `
             <p>Office: ${completedTeam[i].officeNumber}</p>
