@@ -154,7 +154,7 @@ function compileTeam() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>${completedTeam[0]}</title>
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
      ${style}
     </style>
@@ -163,16 +163,16 @@ function compileTeam() {
     <div class="card-header">
         <h1>${completedTeam[0]}</h1>
     </div>
-    <div class="card-container">
+    <section class="card-container">
     `
     htmlArray.push(htmlBeginning);
 
     for (let i = 1; i < completedTeam.length; i++) {
         let object = `
-        <div class="member-card">
+        <div class="card-body">
             <div class="card-top">
-                <h2>${completedTeam[i].name}</h2>
-                <h2>${completedTeam[i].title}</h2>
+                <h2 class="card-name">${completedTeam[i].name}</h2>
+                <h2 class = "member-title">${completedTeam[i].title}</h2>
             </div>
             <div class="card-bottom">
                 <p>Employee ID: ${completedTeam[i].id}</p>
@@ -202,7 +202,7 @@ function compileTeam() {
     }
 
     const htmlEnd = `
-    </div>
+    </section>
     </body>
     </html>
     `

@@ -1,7 +1,7 @@
 ## Team Profile Generator 
 
 ## Purpose
-A command line application built using node that creates a team profile HTML file, based on user input.
+A Node CLI application that creates a team profile based on user input, and renders an HTML file.
 
 ## Built With
 * JavaScript
@@ -14,11 +14,15 @@ A command line application built using node that creates a team profile HTML fil
 
 
 ## Link to walk thru video of application
-https://drive.google.com/file/d/1lM2vGWbJxVYD-MUzoyjwhvuo4QefaK_Q/view
+https://drive.google.com/file/d/113sMWFsf-5z8rvxF99pjspYPMc1F5igG/view
 
 ## Screenshots of tests
 ![](./assets/images/screenshots/testscreenshotsone.png)
 ![](./assets/images/screenshots/testscreenshotstwo.png)
+
+## Screenshot of rendered HTML
+![](./assets/images/screenshots/renderedHTML.png)
+
 
 ## Contribution
 Created by Kellie Werrell :star:

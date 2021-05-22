@@ -22,17 +22,19 @@ h1 {
        font-size: 52px;
 }
 p {
-    font-family: sans-serif;
+    font-family: monospace;
     position: relative;
     left: 12px;
+    font-size: 16px
 }
-h2 {
-    font-family: sans-serif;
+
+h2, member-title {
+    font-family: monospace;
     position: relative;
-    font-size: 17px;
+    font-size: 20px;
     left: 12px;
 }
-.member-card {
+.card-body {
     background-color: rgb(240, 238, 238);
     box-shadow: 2px 5px 5px black;
     padding: 0 20px 0 20px;
