@@ -1,4 +1,4 @@
-const style = `
+const stylesheet = `
 html, body {
     max-width: 100% !important;
     
@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.banner-bar {
+.card-header {
     justify-content: center;
     align-items: center;
     height: 20vh;
@@ -19,7 +19,7 @@ body {
     
 }
 h1 {
-       font-size: 8vw;
+       font-size: 52px;
 }
 p {
     font-family: sans-serif;
@@ -33,12 +33,12 @@ h2 {
     left: 12px;
 }
 .member-card {
-    padding: 0 20px 0 20px;
-    width: 250px;
-    height: 34vh;
-    margin-bottom: 5vh;
     background-color: rgb(240, 238, 238);
     box-shadow: 2px 5px 5px black;
+    padding: 0 20px 0 20px;
+    width: 250px;
+    height: 54vh;
+    margin-bottom: 5vh;
     border-top-left-radius: 10px;
     margin-right: 20px;
 }
@@ -64,4 +64,4 @@ h2 {
 }
 `
 
-module.exports = style;
+module.exports = stylesheet;

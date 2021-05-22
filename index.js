@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const style = require("./templates/style")
+const style = require("./src/style")
 
 const Employee = require("./lib/employee")
 const Engineer = require("./lib/engineer")
@@ -10,7 +10,7 @@ const Intern = require("./lib/intern")
 let completedTeam = [];
 
 
-function start() {
+function startTeamProfile() {
     inquirer.prompt([
         {
             message: "Please type your team name:",
@@ -160,7 +160,7 @@ function compileTeam() {
     </style>
 </head>
 <body>
-    <div class="banner-bar">
+    <div class="card-header">
         <h1>${completedTeam[0]}</h1>
     </div>
     <div class="card-container">
@@ -180,7 +180,7 @@ function compileTeam() {
         `
         if (completedTeam[i].officeNumber) {
             object += `
-            <p>${completedTeam[i].officeNumber}</p>
+            <p>Office: ${completedTeam[i].officeNumber}</p>
             `
         }
         if (completedTeam[i].github) {
@@ -212,4 +212,4 @@ function compileTeam() {
     })
 }
 
-start()
+startTeamProfile()
