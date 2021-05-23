@@ -19,8 +19,8 @@ expect(typeof(employee)).toBe('object');
   });
 
   test("test that email can be set via constructor argument", () => {
-    const testValue = "test@test.com";
-    const employee = new Employee("Foo", 1, testValue);
+    const testValue = "test@disney.com";
+    const employee = new Employee("Dragon", 1, testValue);
     expect(employee.email).toBe(testValue);
   });
   

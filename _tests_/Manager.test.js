@@ -8,7 +8,7 @@ test('testing for type', () => {
 
     test("test that office number can be set via constructor argument", () => {
         const testValue = 100;
-        const manager = new Manager("Foo", 1, "test@test.com", testValue);
+        const manager = new Manager("Dragon", 1, "test@disney.com", testValue);
         expect(manager.officeNumber).toBe(testValue);
       });
 
